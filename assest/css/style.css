@@ -1,0 +1,386 @@
+/* font importing */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+
+/* Global valuable */
+:root {
+    --primary-color: #3F3232;
+    --secondary-color: #F5EFEF;
+    --footer-nav-text: #75464A;
+    --borders-color: #75464AB2;
+    --box-bg:#F7F5F5;
+    --heading-color: #121111;
+    --white-color: #fff;
+}
+
+body {min-height: 155vh;}
+/* font weights */
+
+.fs-3 {font-weight: 300;}
+.fw-def {font-weight:400;}
+.fw-6 {font-weight: 600;}
+.fw-7 {font-weight:700}
+.fw-9 {font-weight:900}
+
+
+/* display */
+.dis-in-b {display:inline-block}
+
+/* font heights - line heights*/
+.fh-def {line-height: 16px;}
+.fh-21 {line-height: 21px;}
+.fh-22 {line-height: 22px;}
+.fh-24 {line-height: 24px;}
+.fh-26 {line-height: 26px;}
+.fh-28 {line-height: 28px;}
+.fh-30 {line-height: 30px;}
+
+/* font sizes */
+.fs-12 {font-size: 12px;}
+.fs-18 {font-size:18px;}
+.fs-20 {font-size:20px}
+.fs-22 {font-size:22px}
+.fs-25 {font-size: 25px;}
+
+
+
+.no-border{border-radius:0px;border:0}
+/* Global valuable END */ 
+
+/* Global styling */
+
+a, h1, h2, h3, h4, h5, h6,  span, p.logo-title {font-family: 'Cinzel', serif;}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul li.nav-item:not(:last-child) {margin-right:48px}
+
+nav ul li a {
+    color: var(--primary-color);
+    transition: 0.4s ease-in;
+}
+nav ul li a:hover {
+    text-shadow: 1px 1px 0px var(--heading-color);
+    transition: 0.4s ease-in;
+}
+
+p { color: var(--primary-color) }
+img, iframe {border-radius:10px}
+li.my-acc {vertical-align: middle;}
+main {margin: 162px 120px 183px 120px}
+.page-title {margin-bottom: 100px;}
+a { text-decoration: none; }
+
+label {
+    display: block;
+    margin-bottom: 14px;
+    font-family: "Cinzel", sans-serif;
+}
+
+input, textarea#textarea {
+    border: 1px solid var(--borders-color);
+    border-radius: 10px;
+}
+
+input {padding:20px 0 20px 10px}
+
+
+
+/* header styling */
+
+header {
+    background-color: var(--secondary-color);
+    padding: 40px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div a.logo-text {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* header icon animation  */
+
+img.logo-icon-src,  img.logo-icon-src:hover {
+    transition: 1s ease-in-out;
+}
+
+img.logo-icon-src:hover {transform: rotate(720deg);}
+
+
+/* profile image hover animation */
+
+img.profile-img {
+    transition: .5s ease-in;
+    outline: 1px solid var(--heading-color);
+    border-radius: 50px;
+}
+
+
+img.profile-img:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in;
+}
+
+.logo-icon {
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+/* footer styling  */
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 66px 100px 97px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.social-icons-box {margin-top: 46px;}
+div.social-icons-box ul li:not(:last-child) {margin-right:30px}
+
+footer nav ul li:not(:last-child) {margin-bottom: 36px;}
+nav.footer-nav {
+    display: flex;
+    gap: 150px;
+}
+
+footer nav ul li img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+/* footer social icons hover  */
+
+footer ul li a.social-icon img, footer  ul li a.social-icon img:hover {transition:.5s ease-in-out}
+footer ul li a.social-icon img:hover {filter: brightness(0.5)}
+
+
+/* main page */
+
+div.box-container {
+    background-color: var(--box-bg);
+    padding: 21px 22px 44px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--borders-color);
+}
+
+div.box-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+main div.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+section.products {
+    display: flex;
+    gap: 105px;
+    justify-content: center;
+}
+
+/* product add to cart button styling */
+
+a.add-to-cart-btn {
+    text-align: right;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 11px 20px;
+    border-radius: 10px;
+    transition: .4s ease-in;
+}
+
+/* 
+box hover effects  */
+.products a.add-to-cart-btn:hover, div.product-view-more a:hover {
+    background-color: #2b2323;
+    transition: .4s ease-in;
+}
+
+.products .box-top img.product-image:hover {
+    filter: blur(0.7px);
+    transition: .4s ease-in;
+}
+
+div.product-view-more {
+    text-align: right;
+    margin-top: 92px;
+}
+
+div.product-view-more a {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 18px 53px;
+    border-radius: 10px;
+}
+
+/* gallery page styiling */
+main.gallery-content section.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 155px;
+}
+
+/* gallery image hover effects */
+section.gallery img.gallery-img:hover {
+    transform: scale(104%);
+    animation: outliner 5s;
+    cursor: pointer;
+    outline: 3px solid var(--heading-color);
+}
+
+section.gallery img.gallery-img:hover, section.gallery img.gallery-img {transition: all .5s ease-in-out;}
+
+
+/* faq page styling */
+
+main.faq-content section.faqs {
+    width: 1044px; 
+    display: flex;
+    flex-direction: column;
+    gap: 144px;
+}
+main.faq-content section.faqs div.faq h2.faq-question {
+    border-bottom: 1px solid var(--footer-nav-text);
+    padding-bottom: 21px;
+    width: 75%;
+}
+
+main.faq-content section.faqs div.faq p.faq-answer {
+    margin-top: 43px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: justify;
+}
+
+/* contact page styling */
+
+main.contact section.contact-form-section .form-title, main.contact section.contact-form-section .form-title-desc, main.contact table.form-info {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main.contact table.form-info {
+    margin: 0 auto;
+    border-spacing: 15px;
+    border-collapse: separate;
+    font-family: 'Cinzel', sans-serif;
+    text-align: left;
+}
+
+form.contact-form {
+    margin-top: 97px;
+    display: flex;
+    gap: 117px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form.contact-form label span.required-tag {color: #FF0000}
+
+div.inputes.custom-checkbox {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+div.inputes {width: 45%;}
+
+
+/* custom checkbox styiling */
+
+form.contact-form input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+form.contact-form label.checkbox {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--borders-color);
+  border-radius: 10px;
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox input:checked ~ .check:after {
+    display: block;
+  }
+
+  .checkbox .check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--heading-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+label.checkbox a {color:#0057FF}
+
+form.contact-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: "Cinzel", sans-serif;
+    padding: 20px 60px;
+    cursor: pointer;
+}
+
+/* about us page styling */
+
+main.about-content section.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 248px;
+}
+
+main.about-content div.textbox {
+    display: flex;
+    gap: 116px;
+    align-items: center;
+    justify-content: center;
+}
+
+main.about-content div.textbox p.about-text {
+    width: 60%;
+}
+
+main.about-content div.textbox.reverse {
+    flex-direction: row-reverse;
+}
